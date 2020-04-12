@@ -6,12 +6,10 @@ services:
       - ./:/app
     ports:
       - "3000:3000"
-    links:
-      — mongo
+    links: — mongo
   mongo:
     image: mongo
-    ports:
-      — "27017:27017"
+    ports: — "27017:27017"
     volumes_from:
       - mongodata
   mongodata:
@@ -19,4 +17,3 @@ services:
     volumes:
       - /data/db
     command: echo 'Data container for auth'
-© 2020 GitHub, Inc.
