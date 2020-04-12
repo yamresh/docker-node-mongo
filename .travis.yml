@@ -1,5 +1,6 @@
 version: "3"
 sudo: required
+language: node
 services:
   - docker
 
